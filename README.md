@@ -31,6 +31,7 @@ So open the OwinHosted Startup file and change
     // app.Use<CustomWebSocket>();
             
 to
+    
     //app.UseXSockets(true);
     app.Use<CustomWebSocket>();
     
