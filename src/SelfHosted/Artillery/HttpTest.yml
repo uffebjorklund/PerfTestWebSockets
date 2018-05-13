@@ -1,0 +1,9 @@
+﻿config:
+  target: 'http://localhost:4502'
+  phases:
+    - duration: 60
+      arrivalRate: 300
+scenarios:
+  - flow:
+    - get:
+        url: "/foo/bar"

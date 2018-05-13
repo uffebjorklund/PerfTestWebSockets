@@ -1,0 +1,14 @@
+﻿ config:
+    target: "ws://localhost:4502"
+    phases:
+      - duration: 60
+        arrivalRate: 300
+    defaults:
+      headers:
+        Sec-WebSocket-Protocol:'Native'
+ scenarios:
+    - engine: "ws"
+      flow:
+        - send: "{\"D\":\"hello\",\"C\":\"foo\",\"T\":\"bar\"}"
+        - think: 1
+        - send: "{\"D\":\"world\",\"C\":\"foo\",\"T\":\"bar\"}"

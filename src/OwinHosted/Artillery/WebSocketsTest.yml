@@ -1,0 +1,11 @@
+﻿ config:
+    target: "ws://localhost:54649"
+    phases:
+      - duration: 60
+        arrivalRate: 300
+ scenarios:
+    - engine: "ws"
+      flow:
+        - send: "{\"D\":\"hello\",\"C\":\"foo\",\"T\":\"bar\"}"
+        - think: 1
+        - send: "{\"D\":\"world\",\"C\":\"foo\",\"T\":\"bar\"}"
