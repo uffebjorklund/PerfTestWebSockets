@@ -99,6 +99,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomProtocolHandshakeHandler.cs" />
     <Compile Include="NativeWebSockets.cs" />
     <Compile Include="Foo.cs" />
     <Compile Include="Program.cs" />
@@ -112,6 +113,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="tools\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="XSocketsNET\dummy.txt" />
     <Content Include="XSocketsNET\ServerExample\ReadMe.txt" />
   </ItemGroup>
